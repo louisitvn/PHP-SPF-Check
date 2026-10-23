@@ -197,7 +197,7 @@ class DNSRecordGetterDirect implements DNSRecordGetterInterface
                         "host"  => $record->getDomain(),
                         "class" => "IN",
                         "ttl"   => $record->getTtl(),
-                        "type"  => $record->getTypeid(),
+                        "type"  => $record->getTypename(),
                         "ip"    => $record->getData(),
                     );
                     break;
@@ -206,7 +206,7 @@ class DNSRecordGetterDirect implements DNSRecordGetterInterface
                         "host"  => $record->getDomain(),
                         "class" => "IN",
                         "ttl"   => $record->getTtl(),
-                        "type"  => $record->getTypeid(),
+                        "type"  => $record->getTypename(),
                         "ipv6"  => $record->getData(),
                     );
                     break;
@@ -215,7 +215,7 @@ class DNSRecordGetterDirect implements DNSRecordGetterInterface
                         "host"   => $record->getDomain(),
                         "class"  => "IN",
                         "ttl"    => $record->getTtl(),
-                        "type"   => $record->getTypeid(),
+                        "type"   => $record->getTypename(),
                         "pri"    => $extras["level"],
                         "target" => $record->getData(),
                     );
@@ -225,7 +225,7 @@ class DNSRecordGetterDirect implements DNSRecordGetterInterface
                         "host"    => $record->getDomain(),
                         "class"   => "IN",
                         "ttl"     => $record->getTtl(),
-                        "type"    => $record->getTypeid(),
+                        "type"    => $record->getTypename(),
                         "txt"     => $record->getData(),
                         "entries" => array($record->getData()),
                     );
@@ -235,7 +235,7 @@ class DNSRecordGetterDirect implements DNSRecordGetterInterface
                         "host"   => $record->getDomain(),
                         "class"  => "IN",
                         "ttl"    => $record->getTtl(),
-                        "type"   => $record->getTypeid(),
+                        "type"   => $record->getTypename(),
                         "target" => $record->getData(),
                     );
                     break;
